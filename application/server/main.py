@@ -15,7 +15,7 @@ app = FastAPI()
 def scan_domian(domain: str, parent =""):
     now = datetime.now()
     dt_string = now.strftime("_%d_%m_%Y_%H_%M_%S")
-    parent_dir = os.getcwd()+"\\"+domain+dt_string+".txt"
+    parent_dir = os.getcwd()+"\output\\"+domain+dt_string+".txt"
     parent_dir.strip
     p = subprocess.Popen(['python',"./tools/third_party/subscraper/subscraper.py" ,domain,"-r"+parent_dir])
     # # Using readlines()
