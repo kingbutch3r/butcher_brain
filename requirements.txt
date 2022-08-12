@@ -3,7 +3,9 @@ starlette
 uvicorn
 python-multipart
 ipparser
+firebase-admin
 bs4
+numpy
 dnspython
 requests
 censys==2.1.6
